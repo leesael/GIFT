@@ -15,7 +15,8 @@
 
 1. Introduction
 
-    GIFT is a Guided and Interpretable Factorization for Tensors. GIFT provides interpretable factor matrices by encoding prior knowledge as a regularization term in its objective function.
+    GIFT is a Guided and Interpretable Factorization for Tensors. GIFT provides interpretable factor matrices by 
+    encoding prior knowledge as a regularization term in its objective function.
     
     Please refer to the following website for the details of GIFT.
   	https://datalab.snu.ac.kr/GIFT/
@@ -36,13 +37,19 @@
 
 		If you successfully install all libraries, "make stf, ptf, or gift" command will create the corresponding executable file.
 
-		The executable file takes 7 (GIFT and Silenced-TF) or 6 (P-Tucker) arguments, which are the path of input tensor file, path of a mask matrix (GIFT and Silenced-TF only), path of directory for storing results, tensor order, lambda, tensor rank. The arguments MUST BE valid and in the above order.
+		The executable file takes 7 (GIFT and Silenced-TF) or 6 (P-Tucker) arguments, which are the path of input tensor file,
+		path of a mask matrix (GIFT and Silenced-TF only), path of directory for storing results, tensor order, lambda, 
+		tensor rank. The arguments MUST BE valid and in the above order.
 
 		ex1) ./gift input.txt mask.txt result/ 3 0.01 10 20 30
 		ex2) ./pf input.txt result/ 3 0.01 10 20 30
 
-		Note that an input tensor uses base-1 indexing and mask matrices use base-0 indexing. Mask matrices should be given in a single file, where the first column indicates a mask matrix number and the rest of columns are indices in a mask matrix.
+		Note that an input tensor uses base-1 indexing and mask matrices use base-0 indexing. Mask matrices should be given in 
+		a single file, where the first column indicates a mask matrix number and the rest of columns are indices 
+		in a mask matrix.
 		
-		If you put the command properly, GIFT and other methods will write all values of factor matrices and a core tensor in the result directory set by an argument. (PLEASE MAKE SURE THAT YOU HAVE A WRITE PERMISSION TO THE RESULT DIRECTORY!)
+		If you put the command properly, GIFT and other methods will write all values of factor matrices and 
+		a core tensor in the result directory set by an argument. 
+		(PLEASE MAKE SURE THAT YOU HAVE A WRITE PERMISSION TO THE RESULT DIRECTORY!)
 
 		ex) result/FACTOR1, result/CORETENSOR
