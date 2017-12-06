@@ -37,7 +37,7 @@
 
 		If you successfully install all libraries, "make stf, ptf, or gift" command will create the corresponding executable file.
 
-		The executable file takes 7 (GIFT and Silenced-TF) or 6 (P-Tucker) arguments, which are the path of input tensor file, path of a mask matrix (GIFT and Silenced-TF only), path of directory for storing results, tensor order, lambda, and tensor rank. The arguments MUST BE valid and in the above order.
+		The executable file takes 6 (GIFT and Silenced-TF) or 5 (P-Tucker) arguments, which are the path of an input tensor file, path of a mask matrix (GIFT and Silenced-TF only), path of a directory for storing results, tensor order (N), lambda, and tensor ranks (N elements). The arguments MUST BE valid and in the above order.
 
 		ex1) ./gift input.txt mask.txt result/ 3 0.01 10 20 30
 		ex2) ./pf input.txt result/ 3 0.01 10 20 30
