@@ -1,4 +1,4 @@
-##########################################################################################
+#####################################################################################################
 #   GIFT: Guided and Interpretable Factorization for Tensors - Applications to Human Cancer Analytics
 #   
 #   Authors: Sejoon Oh (ohhenrie@snu.ac.kr), Seoul National University
@@ -11,13 +11,13 @@
 #
 #   This software is free of charge under research purposes.
 #   For commercial purposes, please contact the author.
-##########################################################################################
+######################################################################################################
 
 1. Introduction
 
     GIFT is a Guided and Interpretable Factorization for Tensors. GIFT provides interpretable factor matrices by encoding prior knowledge as a regularization term in its objective function.
     
-    Please refer to the following website for the details of GIFT
+    Please refer to the following website for the details of GIFT.
   	https://datalab.snu.ac.kr/GIFT/
 
 2. Usage
@@ -32,7 +32,7 @@
 
 		OpenMP version 2.0 or higher is required for GIFT. (It is installed by default if you use gcc/g++ compiler)
  	
- 	[Step 2] Compile and run GIFT
+ 	[Step 2] Compile and run GIFT.
 
 		If you successfully install all libraries, "make stf, ptf, or gift" command will create the corresponding executable file.
 
@@ -40,6 +40,8 @@
 
 		ex) ./gift input.txt mask.txt result/ 3 0.01 10 20 30
 
+		Note that an input tensor uses base-1 indexing and mask matrices use base-0 indexing. Mask matrices should be given in a single file, where the first column indicates a mask matrix number and the rest of columns are indices in a mask matrix.
+		
 		If you put the command properly, GIFT will write all values of factor matrices and a core tensor in the result directory set by an argument. (PLEASE MAKE SURE THAT YOU HAVE A WRITE PERMISSION TO THE RESULT DIRECTORY!)
 
 		ex) result/FACTOR1, result/CORETENSOR
