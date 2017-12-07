@@ -16,7 +16,7 @@ and GIFT reveals significant relations between cancers, gene sets, and genes, su
 sets for specific cancer (e.g., interferon-gamma response gene set for ovarian cancer) or relations between
 cancers and genes (e.g., BRCA cancer $ APOA1 gene and OV, UCEC cancers $ BST2 gene).
 
-![overview_img](/img/overview.pdf)
+![overview_img](/img/overall.png)
 
 
 Paper
