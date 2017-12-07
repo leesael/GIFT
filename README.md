@@ -14,7 +14,7 @@ factor matrices by encoding prior knowledge as a regularization term in its obje
 and accuracy, while other methods lack interpretability. We apply GIFT to the PANCAN12 dataset,
 and GIFT reveals significant relations between cancers, gene sets, and genes, such as influential gene
 sets for specific cancer (e.g., interferon-gamma response gene set for ovarian cancer) or relations between
-cancers and genes (e.g., BRCA cancer $ APOA1 gene and OV, UCEC cancers $ BST2 gene).
+cancers and genes (e.g., BRCA cancer *<->* APOA1 gene and OV, UCEC cancers *<->* BST2 gene).
 
 ![overview_img](/img/overall.png)
 
@@ -31,7 +31,6 @@ Code
 Refer to the code directory in our repository or download the following zip file.
 [[GIFT-v1.0](/code/GIFT1.0.zip)]
 
-
 Dataset
 ---------------
 | Name | Structure | Size | Number of Nonzeros | Download |
@@ -39,4 +38,4 @@ Dataset
 | PanCan12     | Patient - Gene - Experiment Type | 4,993 &times; 14,591 &times; 5 | 180M | [DOWN](https://datalab.snu.ac.kr/data/GIFT/total.zip) |
 | Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,591 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/GIFT/mask.zip) |
 
-**M**<sup>(1)</sup> and **M**<sup>(3)</sup> are filled with zeros, and three mask matrices are concatenated together in a mask file. The file contains information about intended entries (genes in gene set) which are to be initialized as 0 in **GIFT**.
+**M**<sup>(1)</sup> and **M**<sup>(3)</sup> are filled with zeros, and three mask matrices are concatenated together in a single mask file. The file contains information about intended entries (genes in gene set) which are to be initialized as zeros in **GIFT**.
