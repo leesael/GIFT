@@ -32,9 +32,11 @@ Refer to the code directory in our repository or download the following zip file
 [[GIFT-v1.0](/code/GIFT1.0.zip)]
 
 
-Data
+Dataset
 ---------------
-| Name | Structure | Size | Number of Entries | Download |
+| Name | Structure | Size | Number of Nonzeros | Download |
 | :------------ | :-----------: | :-------------: |------------: |:------------------: |
-| PanCan12     | Patient - Gene - Platform | 4,555 &times; 14,351 &times; 5 | 183,211,020 | [DOWN](https://datalab.snu.ac.kr/data/SNeCT/pancan12_tensor.tar.gz) |
-| Pathway    | Gene - Gene | 14,351 &times; 14,351 | 665,429 | [DOWN](https://datalab.snu.ac.kr/data/SNeCT/pathway_network.tar.gz) |
+| PanCan12     | Patient - Gene - Experiment Type | 4,993 &times; 14,591 &times; 5 | 180M | [DOWN](https://datalab.snu.ac.kr/data/GIFT/total.zip) |
+| Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,591 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/GIFT/mask.zip) |
+
+**M**<sup>(1)</sup> and **M**<sup>(3)</sup> are filled with zeros, and three mask matrices are concatenated together in a mask file. The file contains information about intended entries (genes in gene set) which are to be initialized as 0 in **GIFT**.
