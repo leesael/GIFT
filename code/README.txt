@@ -47,3 +47,11 @@
 		If you put the command properly, GIFT and other methods will write all values of factor matrices and a core tensor in the result directory set by an argument. (PLEASE MAKE SURE THAT YOU HAVE A WRITE PERMISSION TO THE RESULT DIRECTORY!)
 
 		ex) result/FACTOR1, result/CORETENSOR
+
+3. Demo
+	
+	"make demo" command will run the demo program, which performs GIFT for a sample tensor with sample mask matrices.
+
+	You can see factorization results in a 'sample' directory, while the intermediate process is presented on your screen.
+	
+	Note that you can check the sample tensor and mask matrices in the 'sample' directory.

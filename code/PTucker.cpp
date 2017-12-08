@@ -11,8 +11,10 @@
 * This software is free of charge under research purposes.
 * For commercial purposes, please contact the author.
 *
+* Description: the baseline TF method which utilizes a gradient-based ALS for higher scalability and accuracy. 
 * Usage:
 *   - make ptf
+*   - ./ptf input.txt result/ 3 0.01 10 20 30
 */
 
 

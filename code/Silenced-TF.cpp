@@ -11,8 +11,10 @@
 * This software is free of charge under research purposes.
 * For commercial purposes, please contact the author.
 *
+* Description: the interpretable TF method which makes unintended entries as zeros according to mask matrices. 
 * Usage:
 *   - make stf
+*   - ./stf input.txt mask.txt result/ 3 0.01 10 20 30
 */
 
 
@@ -203,6 +205,7 @@ printf("]\tRank: [");
 	assign_index();
 	FactorM = (double *)malloc(sizeof(double)*order*max_dim*Core_dim);
 	Mask = (int *)malloc(sizeof(int)*order*max_dim*Core_dim);
+	memset(Mask, 0, sizeof(int)*order*max_dim*Core_dim);
 	fmask = fopen(MaskPath, "r");
 	int xx, yy,zz;
 	while(fscanf(fmask,"%d %d %d",&xx,&yy,&zz)!=EOF){
