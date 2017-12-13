@@ -54,4 +54,13 @@
 
 	You can see factorization results in a 'sample' directory, while the intermediate process is presented on your screen.
 	
-	Note that you can check the sample tensor and mask matrices in the 'sample' directory.
+	Note that you can check the sample tensor and mask matrices in the 'sample' directory and the descriptions are as follows.
+
+	- sample.data: The sample tensor which is a 3-order tensor of size 4,555 (patient) * 3,994 (gene) * 5 (experiment type) with 613,355 nonzeros. 
+	               Each row in sample.data corresponds to each nonzero. First three columns and the last column indicate a coordinate and a value of a nonzero, respectively. The indexing starts from 1.
+
+	- sample.mask: The mask matrix M^(2) which is a matrix with size 3994 (gene) * 50 (number of gene sets, or rank) with 6,789 nonzeros. 
+				   Each row in sample.mask corresponds to each nonzero. The first column indicates a mode, 2 for this sample mask. The second and the third column indicates a coordinate of an intended entry. The indexing starts from 1.
+
+
+
