@@ -209,7 +209,7 @@ printf("]\tRank: [");
 	fmask = fopen(MaskPath, "r");
 	int xx, yy,zz;
 	while(fscanf(fmask,"%d %d %d",&xx,&yy,&zz)!=EOF){
-		Mask[xx*max_dim*Core_dim+yy*Core_dim+zz] = 1;
+		Mask[(xx-1)*max_dim*Core_dim+(yy-1)*Core_dim+(zz-1)] = 1;
 	}
 
 	int mult = max_dim*Core_dim;
