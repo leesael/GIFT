@@ -443,7 +443,7 @@ void Print() {
 	int pos = 0;
 	int mult = max_dim*Core_dim;
 	for (i = 0; i < order; i++) {
-		sprintf(temp, "%s/FACTOR%d", ResultPath, i);
+		sprintf(temp, "%s/FACTOR%d", ResultPath, i + 1);
 		FILE *fin = fopen(temp, "w");
 		for (j = 0; j < dimensionality[i]; j++) {
 			for (k = 0; k < Core_size[i]; k++) {
@@ -457,7 +457,7 @@ void Print() {
 	pos = 0;
 	for (i = 0; i < Core_N; i++) {
 		for (j = 0; j < order; j++) {
-			fprintf(fcore, "%d\t", CorePermu[pos++]);
+			fprintf(fcore, "%d\t", CorePermu[pos++] + 1);
 		}
 		fprintf(fcore, "%e\n", CoreTensor[i]);
 	}
