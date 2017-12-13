@@ -42,7 +42,7 @@
 		ex1) ./gift input.txt mask.txt result/ 3 0.01 10 20 30
 		ex2) ./ptf input.txt result/ 3 0.01 10 20 30
 
-		Note that an input tensor uses base-1 indexing and mask matrices use base-0 indexing. Mask matrices should be given in a single file, where the first column indicates a mask matrix number and the rest of columns are indices in a mask matrix.
+		Note that an input tensor and mask matrices use base-1 indexing. Mask matrices should be given in a single file, where the first column indicates a mask matrix number and the rest of columns are indices in a mask matrix.
 		
 		If you put the command properly, GIFT and other methods will write all values of factor matrices and a core tensor in the result directory set by an argument. (PLEASE MAKE SURE THAT YOU HAVE A WRITE PERMISSION TO THE RESULT DIRECTORY!)
 
