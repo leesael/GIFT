@@ -35,7 +35,7 @@ Dataset
 ---------------
 | Name | Structure | Size | Number of Nonzeros | Download |
 | :------------ | :-----------: | :-------------: |------------: |:------------------: |
-| PANCAN12 tensor     | Patient - Gene - Experiment Type | 4,993 &times; 14,591 &times; 5 | 180M | [DOWN](https://datalab.snu.ac.kr/data/GIFT/total.zip) |
-| Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,591 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/GIFT/mask.zip) |
+| PANCAN12 tensor     | Patient - Gene - Experiment Type | 4,555 &times; 14,351 &times; 5 | 180M | [DOWN](https://datalab.snu.ac.kr/data/GIFT/total.zip) |
+| Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,351 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/GIFT/mask.zip) |
 
 **M**<sup>(1)</sup> and **M**<sup>(3)</sup> are filled with zeros, and three mask matrices are concatenated together in a single mask file. The file contains information about intended entries (genes in gene set) which are to be initialized as zeros in **GIFT**.
