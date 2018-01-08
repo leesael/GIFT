@@ -1,5 +1,5 @@
 #####################################################################################################
-#   GIFT: Guided and Interpretable Factorization for Tensors - Applications to Human Cancer Analytics
+#   GIFT: Guided and Interpretable Factorization for Tensors - An Application to Large-Scale Multi-platform Cancer Analysis
 #   
 #   Authors: Sejoon Oh (ohhenrie@snu.ac.kr), Seoul National University
 #            Jungwoo Lee (muon9401@gmail.com), Seoul National University
@@ -60,7 +60,7 @@
 	               Each row in sample.data corresponds to each nonzero. First three columns and the last column indicate a coordinate and a value of a nonzero, respectively. The indexing starts from 1. For example, a line ‘2 3 1 1.5’ means that the second patient’s third gene has value 1.5 at the first experiment type. 
 
 	- sample.mask: The mask matrix M^(2) which is a matrix with size 3994 (gene) * 50 (number of gene sets, or rank) with 6,789 nonzeros. 
-				   Each row in sample.mask corresponds to each intended entry. The first column indicates a mode, 2 for this sample mask. The second and the third column indicates a coordinate of an intended entry. The indexing starts from 1. For example, a line ‘2 3 40’ indicates an intended entry in the second factor matrix which is third in gene and 40th in rank. 
+				   Each row in sample.mask corresponds to each unmasked entry. The first column indicates a mode, 2 for this sample mask. The second and the third column indicates a coordinate of an unmasked entry. The indexing starts from 1. For example, a line ‘2 3 40’ indicates an unmasked entry in the second factor matrix which is third in gene and 40th in rank. 
 
 
 

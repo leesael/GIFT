@@ -3,9 +3,9 @@
 Overview
 ---------------
 
-**Motivation**: Given cancer genome data with auxiliary gene set information, how can we extract significant
-relations between cancers, gene sets, and genes? How can we devise a tensor factorization method which
-produces interpretable factor matrices while maintaining the decomposition quality and speed?
+**Motivation**: Given multi-platform genome data with prior knowledge of functional gene sets, how can we extract interpretable latent
+relationships between patients and genes? More specifically, how can we devise a tensor factorization method which produces an
+interpretable gene factor matrix based on gene set information while maintaining the decomposition quality and speed?
 
 **Method**: We propose **GIFT**, a **G**uided and **I**nterpretable **F**actorization for **T**ensors. **GIFT** provides interpretable
 factor matrices by encoding prior knowledge as a regularization term in its objective function.
@@ -22,9 +22,9 @@ cancers and genes (e.g., BRCA cancer *<->* APOA1 gene and OV, UCEC cancers *<->*
 Paper
 ---------------
 
-**GIFT: Guided and Interpretable Factorization for Tensors - Applications to Human Cancer Analytics**  
+**GIFT: Guided and Interpretable Factorization for Tensors - An Application to Large-Scale Multi-platform Cancer Analysis**  
 [Sejoon Oh*](https://www.sejoonoh.com/), [Jungwoo Lee*](https://datalab.snu.ac.kr/~ljw9111/), and [Lee Sael](http://www3.cs.stonybrook.edu/~sael/) (* These authors contributed equally to this work.)   
-[[Paper](/paper/GIFT.pdf)], [[Supplementary Material](/paper/supple.pdf)]
+[[Paper](/paper/GIFT.pdf)]
 
 Code
 ---------------
@@ -37,5 +37,4 @@ Dataset
 | :------------ | :-----------: | :-------------: |------------: |:------------------: |
 | PANCAN12 tensor     | Patient - Gene - Experiment Type | 4,555 &times; 14,351 &times; 5 | 180M | [DOWN](https://datalab.snu.ac.kr/data/GIFT/total.zip) |
 | Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,351 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/GIFT/mask.zip) |
-
-**M**<sup>(1)</sup> and **M**<sup>(3)</sup> are filled with zeros, and three mask matrices are concatenated together in a single mask file. The file contains information about intended entries (genes in gene set) which are to be initialized as zeros in **GIFT**.
+The mask file contains information about unmasked entries (genes in gene set).
