@@ -37,4 +37,5 @@ Dataset
 | :------------ | :-----------: | :-------------: |------------: |:------------------: |
 | PANCAN12 tensor     | Patient - Gene - Experiment Type | 4,555 &times; 14,351 &times; 5 | 180M | [DOWN](https://datalab.snu.ac.kr/data/GIFT/total.zip) |
 | Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,351 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/GIFT/mask.zip) |
+
 The mask file contains information about unmasked entries (genes in gene set).
