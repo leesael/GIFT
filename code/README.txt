@@ -3,10 +3,10 @@
 #   
 #   Authors: Sejoon Oh (ohhenrie@snu.ac.kr), Seoul National University
 #            Jungwoo Lee (muon9401@gmail.com), Seoul National University
-#            Lee Sael (sael@sunykorea.ac.kr), The State University of New York (SUNY) Korea
+#            Lee Sael (saellee@gmail.com), Seoul National University
 #   
 #   Version : 1.0
-#   Date: 2017-11-30
+#   Date: 2018-04-07
 #   Main contact: Sejoon Oh
 #
 #   This software is free of charge under research purposes.
@@ -62,5 +62,6 @@
 	- sample.mask: The mask matrix M^(2) which is a matrix with size 3994 (gene) * 50 (number of gene sets, or rank) with 6,789 nonzeros. 
 				   Each row in sample.mask corresponds to each unmasked entry. The first column indicates a mode, 2 for this sample mask. The second and the third column indicates a coordinate of an unmasked entry. The indexing starts from 1. For example, a line ‘2 3 40’ indicates an unmasked entry in the second factor matrix which is third in gene and 40th in rank. 
 
+4. Tested Environment
 
-
+	We tested our proposed method GIFT in a Linux Ubuntu 16.04.3 LTS machine equipped with an Intel Xeon E5-2630 v4 2.2GHz CPU and 512GB RAM.

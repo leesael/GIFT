@@ -2,9 +2,9 @@
 * @file        GIFT.cpp
 * @author      Sejoon Oh (ohhenrie@snu.ac.kr), Seoul National University
 * @author      Jungwoo Lee (muon9401@gmail.com), Seoul National University
-* @author      Lee Sael (sael@sunykorea.ac.kr), The State University of New York (SUNY) Korea
+* @author      Lee Sael (saellee@gmail.com), Seoul National University
 * @version     1.0
-* @date        2017-11-30
+* @date        2018-04-07
 *
 * GIFT: Guided and Interpretable Factorization for Tensors - Applications to Human Cancer Analytics
 *
@@ -177,6 +177,7 @@ void Getting_Input() {
 				flag = 1;
 			}
 		}
+		if(flag==0) val = idx;
 		Entries[i] = val;
 		NormX += Entries[i] * Entries[i];
 	}

@@ -29,13 +29,17 @@ Paper
 Code
 ---------------
 Refer to the code directory in our repository or download the following zip file.
-[[GIFT-v1.0](/code/GIFT1.0.zip)]
+[[GIFT-v1.0](https://datalab.snu.ac.kr/data/GIFT/GIFT.zip)]
 
 Dataset
 ---------------
 | Name | Structure | Size | Number of Nonzeros | Download |
 | :------------ | :-----------: | :-------------: |------------: |:------------------: |
 | PANCAN12 tensor     | Patient - Gene - Experiment Type | 4,555 &times; 14,351 &times; 5 | 180M | [DOWN](https://datalab.snu.ac.kr/data/GIFT/total.zip) |
-| Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,351 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/GIFT/mask.zip) |
+| Mask matrix, **M**<sup>(2)</sup>	    | Gene - Gene set | 14,351 &times; 50 | 7K | [DOWN](https://datalab.snu.ac.kr/data/GIFT/mask.zip) |
 
 The mask file contains information about unmasked entries (genes in gene set).
+
+Tested Environment
+---------------
+We tested our proposed method **GIFT** in a Linux Ubuntu 16.04.3 LTS machine equipped with an Intel Xeon E5-2630 v4 2.2GHz CPU and 512GB RAM.
