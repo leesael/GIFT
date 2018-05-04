@@ -3,18 +3,19 @@
 Overview
 ---------------
 
-**Motivation**: Given multi-platform genome data with prior knowledge of functional gene sets, how can we extract interpretable latent
-relationships between patients and genes? More specifically, how can we devise a tensor factorization method which produces an
-interpretable gene factor matrix based on gene set information while maintaining the decomposition quality and speed?
+**Motivation**: Given multi-platform genome data with prior knowledge of functional gene sets, how can
+we extract interpretable latent relationships between patients and genes? More specifically, how can we
+devise a tensor factorization method which produces an interpretable gene factor matrix based on functional
+gene set information while maintaining the decomposition quality and speed?
 
 **Method**: We propose **GIFT**, a **G**uided and **I**nterpretable **F**actorization for **T**ensors. **GIFT** provides interpretable
 factor matrices by encoding prior knowledge as a regularization term in its objective function.
 
-**Results**: Experiment results demonstrate that **GIFT** produces interpretable factorizations with high scalability
-and accuracy, while other methods lack interpretability. We apply **GIFT** to the PANCAN12 dataset,
-and **GIFT** reveals significant relations between cancers, gene sets, and genes, such as influential gene
-sets for specific cancer (e.g., interferon-gamma response gene set for ovarian cancer) or relations between
-cancers and genes (e.g., BRCA cancer *<->* APOA1 gene and OV, UCEC cancers *<->* BST2 gene).
+**Results**: We apply GIFT to the PanCan12 dataset (TCGA multi-platform genome data) and compare the
+performance with P-Tucker, our baseline method without prior knowledge constraint, and Silenced-TF, our
+naive interpretable method. Results show that GIFT produces interpretable factorizations with high scalability
+and accuracy. Furthermore, we demonstrate how results of GIFT can be used to reveal significant
+relations between (cancer, gene sets, genes) and validate the findings based on literature evidence.
 
 ![overview_img](/img/overall.png)
 
@@ -22,9 +23,9 @@ cancers and genes (e.g., BRCA cancer *<->* APOA1 gene and OV, UCEC cancers *<->*
 Paper
 ---------------
 
-**GIFT: Guided and Interpretable Factorization for Tensors - An Application to Large-Scale Multi-platform Cancer Analysis**  
+**GIFT: Guided and Interpretable Factorization for Tensors with an Application to Large-Scale Multi-platform Cancer Analysis**  
 [Sejoon Oh*](https://www.sejoonoh.com/), [Jungwoo Lee*](https://datalab.snu.ac.kr/~ljw9111/), and [Lee Sael](http://www3.cs.stonybrook.edu/~sael/) (* These authors contributed equally to this work.)   
-[[Paper](/paper/GIFT.pdf)]
+[[Paper](/paper/GIFT.pdf)] [[Supplementary Material](/paper/Supplementary.pdf)]
 
 Code
 ---------------
