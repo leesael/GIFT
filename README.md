@@ -22,10 +22,12 @@ relations between (cancer, gene sets, genes) and validate the findings based on 
 
 Paper
 ---------------
+Please use the following citation for GIFT:
 
-**GIFT: Guided and Interpretable Factorization for Tensors with an Application to Large-Scale Multi-platform Cancer Analysis**  
-[Sejoon Oh*](https://www.sejoonoh.com/), [Jungwoo Lee*](https://datalab.snu.ac.kr/~ljw9111/), and [Lee Sael](http://www3.cs.stonybrook.edu/~sael/) (* These authors contributed equally to this work.)   
-[[Paper](/paper/GIFT.pdf)] [[Supplementary Material](/paper/Supplementary.pdf)]
+[Jungwoo Lee*](https://datalab.snu.ac.kr/~ljw9111/), [Sejoon Oh*](https://www.sejoonoh.com/), and [Lee Sael](https://leesael.github.io/) (2018). **GIFT: Guided and Interpretable Factorization for Tensors with an application to large-scale multi-platform cancer analysis.** Bioinformatics, bty490.   
+[[Paper](https://academic.oup.com/bioinformatics/article-lookup/doi/10.1093/bioinformatics/bty490)] [[Supplementary Material](/paper/Supplementary.pdf)]
+
+(* These authors contributed equally to this work.)
 
 Code
 ---------------
